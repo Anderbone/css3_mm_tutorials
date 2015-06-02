@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 3 Helper Classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<style type="text/css">
+	    .bs-example{
+	    	margin: 20px;
+	    }
+		.bs-example p{
+	    	padding: 10px;
+	    }	    
+		.wrapper{
+			margin: 20px;
+			padding: 10px;
+			background: #fffacd;
+			border: 1px solid #000;
+		}
+	    .center-block{
+	        width: 50%;
+	        padding: 30px;
+	        background: #e3b740;
+	    }	    
+	</style>     
+</head>
+<body>
+	<div class="bs-example">
+		<!-- contextual background color classes to set the background-color of an element to apply extra emphasis on them -->
+		<p class="bg-primary">Important: Please read the instructions carefully before proceeding.</p>
+		<p class="bg-success">Success: Your message has been sent successfully.</p>
+		<p class="bg-info">Note: You must agree with the terms and conditions to complete the sign up process.</p>
+		<p class="bg-warning">Warning: There was a problem with your network connection.</p>
+		<p class="bg-danger">Error: An error has been occurred while submitting your data.</p>		
+		<hr>
+
+		<!-- generic close icon that can be used for dismissing modals and alerts -->
+		<div class="alert alert-warning">
+		    <a href="#" class="close" data-dismiss="alert">&times;</a>
+		    <strong>Warning!</strong> There was a problem with your network connection.
+		</div>
+		<hr>
+
+		<!-- generic caret icon to indicate the dropdown functionality -->
+		<!-- the direction of the caret icon will reverse automatically in dropup menus -->
+		<ul class="nav nav-pills">
+		    <li class="active"><a href="#">Home</a></li>
+		    <li><a href="#">About</a></li>
+		    <li class="dropdown">
+		        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Services <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		            <li><a href="#">Design</a></li>
+		            <li><a href="#">Development</a></li>
+		        </ul>
+		    </li>
+		</ul>		
+		<hr>
+
+		<!-- class .center-block to align the content block horizontally center -->
+		<div class="wrapper">
+		   <div class="center-block">Center Aligned DIV Box</div>
+		</div>		
+		<hr>
+
+		<!-- float an element to the left or right using the .pull-left and .pull-right -->
+		<div class="pull-left">Floated to left.</div>
+		<div class="pull-right">Floated to right.</div>		
+		<hr><hr>
+
+		<!-- .clearfix class clears the float on any element -->
+		<!-- This class is widely used for fixing the collapsing parent issue, where parent element contains floated boxes -->
+		<div class="wrapper clearfix">
+		   <div class="pull-left">Float to left</div>
+		   <div class="pull-right">Float to right</div>
+		</div>		
+		<hr>
+
+		<!-- force an element to be shown or hidden on all the devices using the .show and .hidden -->
+		<!-- you can use the class .invisible to toggle only the visibility of an element; however the element still occupies the space in the layout -->
+		<div class="show">This is visible to the user.</div>
+		<div class="hidden">This is not visible to the user.</div>
+		<div class="invisible">This is not visible but affects the layout.</div>
+		<hr>
+
+		<!-- The special .sr-only class hides an element to all devices except screen readers -->
+		<p>This paragraph is visible to all devices.</p>
+		<p class="sr-only">This paragraph is only visible to screen readers.</p>		
+		<hr>
+
+		<!-- use class .text-hide to hide the text content of an element -->
+		<h1 class="text-hide">The text of this heading is not visible</h1>
+		<p class="text-hide">The text of this paragraph is not visible.</p>		
+		<hr>
+		
+	</div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
