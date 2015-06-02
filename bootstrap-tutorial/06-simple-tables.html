@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example of Bootstrap 3 Simple Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">  
+	<style type="text/css">
+	    .bs-example{
+	    	margin: 20px;
+	    }
+	</style>	  
+</head>
+<body>
+	<div class="bs-example">
+		<table class="table">
+		    <thead>
+		        <tr>
+		            <th>Row</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Carter</td>
+		            <td>johncarter@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Peter</td>
+		            <td>Parker</td>
+		            <td>peterparker@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>John</td>
+		            <td>Rambo</td>
+		            <td>johnrambo@mail.com</td>
+		        </tr>
+		    </tbody>
+		</table>
+		<hr>
+
+		<!-- alternate background like zebra-strips by adding class .table-striped to the .table base class -->
+		<table class="table table-striped">
+		    <thead>
+		        <tr>
+		            <th>Row</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Carter</td>
+		            <td>johncarter@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Peter</td>
+		            <td>Parker</td>
+		            <td>peterparker@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>John</td>
+		            <td>Rambo</td>
+		            <td>johnrambo@mail.com</td>
+		        </tr>
+		    </tbody>
+		</table>		
+		<hr>
+
+		<!-- add borders to table cells by adding an class .table-bordered -->
+		<table class="table table-bordered">
+		    <thead>
+		        <tr>
+		            <th>Row</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Carter</td>
+		            <td>johncarter@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Peter</td>
+		            <td>Parker</td>
+		            <td>peterparker@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>John</td>
+		            <td>Rambo</td>
+		            <td>johnrambo@mail.com</td>
+		        </tr>
+		    </tbody>
+		</table>
+		<hr>
+
+		<!-- enable a hover state on table rows within a <tbody> element by adding class .table-hover		 -->
+		<table class="table table-hover">
+		    <thead>
+		        <tr>
+		            <th>Row</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Carter</td>
+		            <td>johncarter@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Peter</td>
+		            <td>Parker</td>
+		            <td>peterparker@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>John</td>
+		            <td>Rambo</td>
+		            <td>johnrambo@mail.com</td>
+		        </tr>
+		    </tbody>
+		</table>
+		<hr>
+
+		<!-- make tables more compact and save the space adding class .table-condensed -->
+		<!-- makes the table compact by cutting the cell padding in half -->
+		<table class="table table-condensed">
+		    <thead>
+		        <tr>
+		            <th>Row</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Carter</td>
+		            <td>johncarter@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Peter</td>
+		            <td>Parker</td>
+		            <td>peterparker@mail.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>John</td>
+		            <td>Rambo</td>
+		            <td>johnrambo@mail.com</td>
+		        </tr>
+		    </tbody>
+		</table>
+		<hr>		
+
+		<!-- contextual classes to emphasize the row or individual cells data like success, warning, danger, etc. -->
+		<table class="table">
+		    <thead>
+		        <tr>
+		            <th>Row</th>
+		            <th>Bill</th>
+		            <th>Payment Date</th>
+		            <th>Payment Status</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr class="active">
+		            <td>1</td>
+		            <td>Credit Card</td>
+		            <td>04/07/2014</td>
+		            <td>Call in to confirm</td>
+		        </tr>
+		        <tr class="success">
+		            <td>2</td>
+		            <td>Water</td>
+		            <td>01/07/2014</td>
+		            <td>Paid</td>
+		        </tr>
+		        <tr class="info">
+		            <td>3</td>
+		            <td>Internet</td>
+		            <td>05/07/2014</td>
+		            <td>Change plan</td>
+		        </tr>
+		        <tr class="warning">
+		            <td>4</td>
+		            <td>Electricity</td>
+		            <td>03/07/2014</td>
+		            <td>Pending</td>
+		        </tr>
+		        <tr class="danger">
+		            <td>5</td>
+		            <td>Telephone</td>
+		            <td>06/07/2014</td>
+		            <td>Due</td>
+		        </tr>
+		    </tbody>
+		</table>
+		<hr>	
+
+		<!-- create responsive tables to enable scrolling on small devices (screen width under 768px). -->
+		<!-- viewing responsive tables on other devices having screen width larger than 768px, you will not see any difference. -->
+		<div class="table-responsive"> 
+		    <table class="table table-bordered">
+		        <thead>
+		            <tr>
+		                <th>Row</th>
+		                <th>First Name</th>
+		                <th>Last Name</th>
+		                <th>Email</th>
+		                <th>Biography</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td>1</td>
+		                <td>John</td>
+		                <td>Carter</td>
+		                <td>johncarter@mail.com</td>
+		                <td>Lorem ipsum dolor sit amet…</td>
+		            </tr>
+		            <tr>
+		                <td>2</td>
+		                <td>Peter</td>
+		                <td>Parker</td>
+		                <td>peterparker@mail.com</td>
+		                <td>Vestibulum consectetur scelerisque…</td>
+		            </tr>
+		            <tr>
+		                <td>3</td>
+		                <td>John</td>
+		                <td>Rambo</td>
+		                <td>johnrambo@mail.com</td>
+		                <td>Integer pulvinar leo id risus…</td>
+		            </tr>
+		        </tbody>
+		    </table>
+		</div>		
+
+	</div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

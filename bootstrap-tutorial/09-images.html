@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <style type="text/css">
+    img{
+        margin: 10px;
+    }
+	.bs-example{
+    	margin: 20px;
+    }
+</style>
+</head>
+<body>
+	<div class="bs-example">
+		<!-- style images using Bootstrap built-in classes -->
+		<img src="http://www.tutorialrepublic.com/examples/images/125x125.jpg" class="img-rounded" alt="Rounded Image">
+		<img src="http://www.tutorialrepublic.com/examples/images/125x125.jpg" class="img-circle" alt="Circular Image">
+		<img src="http://www.tutorialrepublic.com/examples/images/125x125.jpg" class="img-thumbnail" alt="Thumbnail Image">		
+		<hr>
+
+		<!-- Bootstrap thumbnails component is very useful for creating grids of images or videos, lists of products, portfolios, etc. -->
+		<div class="container">
+		    <div class="row">
+		        <div class="col-xs-3">
+		            <a href="#" class="thumbnail">
+		                <img src="http://www.tutorialrepublic.com/examples/images/125x125.jpg" alt="125x125">
+		            </a>
+		        </div>
+		        <div class="col-xs-3">
+		            <a href="#" class="thumbnail">
+		                <img src="http://www.tutorialrepublic.com/examples/images/125x125.jpg" alt="125x125">
+		            </a>
+		        </div>
+		        <div class="col-xs-3">
+		            <a href="#" class="thumbnail">
+		                <img src="http://www.tutorialrepublic.com/examples/images/125x125.jpg" alt="125x125">
+		            </a>
+		        </div>
+		        <div class="col-xs-3">
+		            <a href="#" class="thumbnail">
+		                <img src="http://www.tutorialrepublic.com/examples/images/125x125.jpg" alt="125x125">
+		            </a>
+		        </div>
+		    </div>
+		</div>		
+		<hr>
+
+		<!-- insert HTML content like headings, paragraphs, or buttons into thumbnails -->
+		<div class="container">
+		    <div class="row">
+		        <div class="col-xs-6">
+		            <div class="thumbnail">
+		                <img src="http://www.tutorialrepublic.com/examples/images/avatar.jpg" alt="Sample Image">
+		                <div class="caption">
+		                    <h3>Thumbnail label</h3>
+		                    <p>Thumbnail description…</p>
+		                    <p><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="col-xs-6">
+		            <div class="thumbnail">
+		                <img src="http://www.tutorialrepublic.com/examples/images/avatar.jpg" alt="Sample Image">
+		                <div class="caption">
+		                    <h3>Thumbnail label</h3>
+		                    <p>Thumbnail description…</p>
+		                    <p><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<hr>
+
+		<!-- use media component to create a layout that contains left- or right-aligned image along with the textual content like blog comments -->
+		<div class="media">
+		    <a href="#" class="pull-left">
+		        <img src="http://www.tutorialrepublic.com/examples/images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+		    </a>
+		    <div class="media-body">
+		        <h4 class="media-heading">Jhon Carter <small><i>Posted on January 10, 2014</i></small></h4>
+		        <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+		    </div>
+		</div>
+		<hr>
+	    <div class="media">
+	        <a href="#" class="pull-right">
+	            <img src="http://www.tutorialrepublic.com/examples/images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+	        </a>
+	        <div class="media-body">
+	            <h4 class="media-heading">Jhon Carter <small><i>Posted on January 10, 2014</i></small></h4>
+	            <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+	        </div>
+	    </div>		
+		<hr>
+
+		<!-- create a list of media object or nested media object using the media list component -->
+		<ul class="media-list">
+		    <li class="media">
+		        <a href="#" class="pull-left">
+		            <img src="http://www.tutorialrepublic.com/examples/images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+		        </a>
+		        <div class="media-body">
+		            <h4 class="media-heading">Media Heading</h4>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipis elit…</p>
+		            <!-- Nested media object -->
+		            <div class="media">
+		                <a href="#" class="pull-left">
+		                    <img src="http://www.tutorialrepublic.com/examples/images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+		                </a>
+		                <div class="media-body">
+		                    <h4 class="media-heading">Nested Media Heading</h4>
+		                    <p>Vestibulum consectetur scelerisque faucibus…</p>
+		                    <!-- Nested media object -->
+		                    <div class="media">
+		                        <a href="#" class="pull-left">
+		                            <img src="http://www.tutorialrepublic.com/examples/images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+		                        </a>
+		                        <div class="media-body">
+		                            <h4 class="media-heading">Nested Media Heading</h4>
+		                            <p>Integer pulvinar leo id risus tempor…</p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <!-- Nested media object -->
+		            <div class="media">
+		                <a href="#" class="pull-left">
+		                    <img src="http://www.tutorialrepublic.com/examples/images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+		                </a>
+		                <div class="media-body">
+		                    <h4 class="media-heading">Nested Media Heading</h4>
+		                    <p>Phasellus vitae suscipit justo mauris…</p>
+		                </div>
+		            </div>
+		        </div>
+		    </li>
+		    <li class="media">
+		        <a href="#" class="pull-left">
+		            <img src="http://www.tutorialrepublic.com/examples/images/avatar-tiny.jpg" class="media-object" alt="Sample Image">
+		        </a>
+		        <div class="media-body">
+		            <h4 class="media-heading">Media Heading</h4>
+		            <p>Quisque pharetra velit id velit iaculis pretium…</p>
+		        </div>
+		    </li>
+		</ul>	
+		<hr>	
+	</div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
