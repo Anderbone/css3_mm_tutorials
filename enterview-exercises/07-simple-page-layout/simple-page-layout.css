@@ -1,0 +1,13 @@
+#simple-layout *{
+    border: 1px solid lightblue;
+    text-align: center;
+}
+#simple-layout{
+    border: 1px solid gray;
+}
+#simple-layout section{
+    width: 33.33%;
+    height: 5em;
+    float: left;
+    box-sizing:border-box;
+}
