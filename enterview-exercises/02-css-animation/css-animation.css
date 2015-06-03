@@ -1,0 +1,49 @@
+#animation-example-ball {
+    background: #0091DC;
+    border-radius: 25px;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.8);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    -webkit-animation: ball 6s linear infinite alternate;
+       -moz-animation: ball 6s linear infinite alternate;
+        -ms-animation: ball 6s linear infinite alternate;
+         -o-animation: ball 6s linear infinite alternate;
+            animation: ball 6s linear infinite alternate;
+}
+
+@-webkit-keyframes ball {
+    0% { top: 50px; left: 50px; }
+    25% { top: 50px; left: 200px; }
+    50% { top: 200px; left: 200px; }
+    75% { top: 200px; left: 50px; }
+    100% { top: 50px; left: 50px; }
+}
+@-moz-keyframes ball {
+    0% { top: 50px; left: 50px; }
+    25% { top: 50px; left: 200px; }
+    50% { top: 200px; left: 200px; }
+    75% { top: 200px; left: 50px; }
+    100% { top: 50px; left: 50px; }
+}
+@-ms-keyframes ball {
+    0% { top: 50px; left: 50px; }
+    25% { top: 50px; left: 200px; }
+    50% { top: 200px; left: 200px; }
+    75% { top: 200px; left: 50px; }
+    100% { top: 50px; left: 50px; }
+}
+@-o-keyframes ball {
+    0% { top: 50px; left: 50px; }
+    25% { top: 50px; left: 200px; }
+    50% { top: 200px; left: 200px; }
+    75% { top: 200px; left: 50px; }
+    100% { top: 50px; left: 50px; }
+}
+@keyframes ball {
+    0% { top: 50px; left: 50px; }
+    25% { top: 50px; left: 200px; }
+    50% { top: 200px; left: 200px; }
+    75% { top: 200px; left: 50px; }
+    100% { top: 50px; left: 50px; }
+}
