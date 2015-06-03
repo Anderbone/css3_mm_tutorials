@@ -1,0 +1,133 @@
+#carrousel{
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    margin: 1em auto;
+}
+#carrousel-images img{
+    padding:0;
+    margin: 0;
+    float: left;
+}
+#carrousel-images{
+    width: 4000px;
+    padding:0;
+    margin: 0;
+    position: relative;
+
+    -webkit-animation: carrousel-animation 33s linear infinite alternate;
+    -moz-animation: carrousel-animation 33s linear infinite alternate;
+    -ms-animation: carrousel-animation 33s linear infinite alternate;
+    -o-animation: carrousel-animation 33s linear infinite alternate;
+    animation: carrousel-animation 33s linear infinite alternate;
+}
+@-webkit-keyframes carrousel-animation {
+    0% { left:0px; }
+    10%{ left:0px; }
+    11%{ left:-400px; }
+    20%{ left:-400px; }
+    21%{ left:-800px; }
+    30%{ left:-800px; }
+    31%{ left:-1200px; }
+    40%{ left:-1200px; }
+    41%{ left:-1600px; }
+    50%{ left:-1600px; }
+    51%{ left:-2000px; }
+    60%{ left:-2000px; }
+    61%{ left:-2400px; }
+    70%{ left:-2400px; }
+    71%{ left:-2800px; }
+    80%{ left:-2800px; }
+    81%{ left:-3200px; }
+    90%{ left:-3200px; }
+    91%{ left:-3600px; }
+    100%{ left:-3600px; }
+}
+@-moz-keyframes carrousel-animation {
+    0% { left:0px; }
+    10%{ left:0px; }
+    11%{ left:-400px; }
+    20%{ left:-400px; }
+    21%{ left:-800px; }
+    30%{ left:-800px; }
+    31%{ left:-1200px; }
+    40%{ left:-1200px; }
+    41%{ left:-1600px; }
+    50%{ left:-1600px; }
+    51%{ left:-2000px; }
+    60%{ left:-2000px; }
+    61%{ left:-2400px; }
+    70%{ left:-2400px; }
+    71%{ left:-2800px; }
+    80%{ left:-2800px; }
+    81%{ left:-3200px; }
+    90%{ left:-3200px; }
+    91%{ left:-3600px; }
+    100%{ left:-3600px; }
+}
+@-ms-keyframes carrousel-animation {
+    0% { left:0px; }
+    10%{ left:0px; }
+    11%{ left:-400px; }
+    20%{ left:-400px; }
+    21%{ left:-800px; }
+    30%{ left:-800px; }
+    31%{ left:-1200px; }
+    40%{ left:-1200px; }
+    41%{ left:-1600px; }
+    50%{ left:-1600px; }
+    51%{ left:-2000px; }
+    60%{ left:-2000px; }
+    61%{ left:-2400px; }
+    70%{ left:-2400px; }
+    71%{ left:-2800px; }
+    80%{ left:-2800px; }
+    81%{ left:-3200px; }
+    90%{ left:-3200px; }
+    91%{ left:-3600px; }
+    100%{ left:-3600px; }
+}
+@-o-keyframes carrousel-animation {
+    0% { left:0px; }
+    10%{ left:0px; }
+    11%{ left:-400px; }
+    20%{ left:-400px; }
+    21%{ left:-800px; }
+    30%{ left:-800px; }
+    31%{ left:-1200px; }
+    40%{ left:-1200px; }
+    41%{ left:-1600px; }
+    50%{ left:-1600px; }
+    51%{ left:-2000px; }
+    60%{ left:-2000px; }
+    61%{ left:-2400px; }
+    70%{ left:-2400px; }
+    71%{ left:-2800px; }
+    80%{ left:-2800px; }
+    81%{ left:-3200px; }
+    90%{ left:-3200px; }
+    91%{ left:-3600px; }
+    100%{ left:-3600px; }
+}
+@keyframes carrousel-animation {
+    0% { left:0px; }
+    10%{ left:0px; }
+    11%{ left:-400px; }
+    20%{ left:-400px; }
+    21%{ left:-800px; }
+    30%{ left:-800px; }
+    31%{ left:-1200px; }
+    40%{ left:-1200px; }
+    41%{ left:-1600px; }
+    50%{ left:-1600px; }
+    51%{ left:-2000px; }
+    60%{ left:-2000px; }
+    61%{ left:-2400px; }
+    70%{ left:-2400px; }
+    71%{ left:-2800px; }
+    80%{ left:-2800px; }
+    81%{ left:-3200px; }
+    90%{ left:-3200px; }
+    91%{ left:-3600px; }
+    100%{ left:-3600px; }
+}
