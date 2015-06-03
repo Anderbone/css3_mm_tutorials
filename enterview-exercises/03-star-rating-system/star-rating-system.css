@@ -1,0 +1,32 @@
+#rating-system{
+    position: relative;
+}
+#rating-system .rate-item{
+    float: right;
+    position: static;
+    -webkit-appearance:initial;
+    -moz-appearance:initial;
+    appearance:initial;
+}
+#rating-system .rate-item:after{
+    border: none;
+    background: none;
+    content: "☆";
+    cursor: pointer;
+}
+.rate-item:checked:before{
+    position: absolute;
+    content: attr(value);
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#rating-system .rate-item:checked,
+#rating-system .rate-item:checked ~ .rate-item {
+    color: red;
+}
+#rating-system .rate-item:hover,
+#rating-system .rate-item:hover ~ .rate-item {
+    color: orange!important;
+}
