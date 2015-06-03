@@ -1,0 +1,8 @@
+#grid-container div{
+	float: left;
+	width: 25%;
+	border: solid .1em blue;	
+	box-sizing: border-box;
+	text-align: center;
+	padding: 1em;
+}
