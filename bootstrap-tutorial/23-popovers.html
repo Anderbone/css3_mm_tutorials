@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 3 Popovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<style type="text/css">
+	    .bs-example{
+	    	margin: 150px 50px;
+	    }
+	</style>     
+</head>
+<body>
+	<div class="bs-example">
+	    <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="Default popover">Popover</button>
+	    <button type="button" class="btn btn-success" data-toggle="popover" title="Popover title" data-content="Another popover">Another popover</button>
+	    <button type="button" class="btn btn-info" data-toggle="popover" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">Large popover</button>
+	    <button type="button" class="btn btn-warning" data-toggle="popover" title="Popover title" data-content="The last popover!">Last popover</button>
+	    <hr>
+
+	    <!-- set the direction of popovers via data attributes -->
+		<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" title="Popover title" data-content="Default popover">Popover on top</button>
+		<button type="button" class="btn btn-success" data-toggle="popover" data-placement="right" title="Popover title" data-content="Popover on right.">Popover on right</button>
+		<button type="button" class="btn btn-info" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="Popover on bottom.">Popover on bottom</button>
+		<button type="button" class="btn btn-warning" data-toggle="popover" data-placement="left" title="Popover title" data-content="Popover on left.">Popover on left</button>
+		<hr>
+
+		<!-- By default popovers are not hiding until you click the trigger element once again. You can use the focus trigger to hide the popovers when the user makes the next click -->
+		<a href="#" class="btn btn-primary btn-lg" data-toggle="popover" tabindex="0" data-trigger="focus" title="Popover title" data-content="Here's some amazing content.">Dismissible popover</a>		
+		<hr>
+
+	</div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Popovers can be triggered via JavaScript -->
+    <!-- call the popover() Bootstrap method with the "id" or "class" selector of the required element -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('[data-toggle="popover"]').popover({
+	        // placement : 'top'
+	    });   
+	});
+	</script>
+
+	<!-- set the direction of popovers via JavaScript -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".pop-top").popover({placement : 'top'});
+	    $(".pop-right").popover({placement : 'right'});
+	    $(".pop-bottom").popover({placement : 'bottom'});
+	    $(".pop-left").popover({ placement : 'left'});
+	});
+	</script>	
+
+	<!-- Methods -->
+	<!-- $().popover(options) -->
+	<!-- .popover('show') -->
+	<!-- .popover('hide') -->
+	<!-- .popover('toggle') -->
+	<!-- .popover('destroy') -->
+
+	<!-- display an alert message to the user when fade out transition of the popover has been fully completed -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('[data-toggle="popover"]').on('hidden.bs.popover', function(){
+	        alert("Popover has been completely closed.");
+	    });
+	});
+	</script>	
+
+</body>
+</html>
