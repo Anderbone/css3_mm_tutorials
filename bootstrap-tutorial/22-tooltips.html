@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 3 Tooltips</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<style type="text/css">
+	    .bs-example{
+	    	margin: 20px;
+	    }
+	</style>     
+</head>
+<body>
+	<div class="bs-example">
+	
+		<!-- set the direction of tooltips via data attributes -->
+		<a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Default tooltip">Tooltip</a>
+		<a href="#" data-toggle="tooltip" data-placement="right" data-original-title="Another tooltip">Another tooltip</a>
+		<a href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="A large tooltip.">Large tooltip</a>
+		<a href="#" data-toggle="tooltip" data-placement="left" data-original-title="The last tip!">Last tooltip</a>
+		<hr>
+
+
+	</div>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- call the tooltip() Bootstrap method with the "id" or "class" selector of the target element -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('[data-toggle="tooltip"]').tooltip();   
+	});
+	</script>
+
+	<!-- set the direction of tooltips via JavaScript -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".tip-top").tooltip({placement : 'top'});
+	    $(".tip-right").tooltip({placement : 'right'});
+	    $(".tip-bottom").tooltip({placement : 'bottom'});
+	    $(".tip-left").tooltip({ placement : 'left'});
+	});
+	</script>
+
+	<!-- $().tooltip(options) -->
+	<!-- This method attaches the tooltip handler to a group of elements -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#myTooltip").tooltip({
+	        title : 'It works in absence of title attribute.'
+	    });
+	});
+	</script>	
+
+	<!-- .tooltip('show') -->
+	<!-- This method reveals an element's tooltip -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".show-tooltip").click(function(){
+	        $("#myTooltip").tooltip('show');
+	    }); 
+	});
+	</script>	
+
+	<!-- .tooltip('hide') -->
+	<!-- This method hides an element's tooltip -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".hide-tooltip").click(function(){
+	        $("#myTooltip").tooltip('hide');
+	    }); 
+	});
+	</script>
+
+	<!-- .tooltip('toggle') -->
+	<!-- This method toggles an element's tooltip -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".toggle-tooltip").click(function(){
+	        $("#myTooltip").tooltip('toggle');
+	    }); 
+	});
+	</script>
+
+	<!-- .tooltip('destroy') -->
+	<!-- This method hides and destroys an element's tooltip -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".destroy-tooltip").click(function(){
+	        $("#myTooltip").tooltip('destroy');
+	    }); 
+	});
+	</script>
+
+	<!-- display an alert message to the user when fade out transition of the tooltip has been fully completed -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('[data-toggle="tooltip"]').on('hidden.bs.tooltip', function(){
+	        alert("Tooltip has been completely closed.");
+	    });
+	});
+	</script>	
+
+</body>
+</html>

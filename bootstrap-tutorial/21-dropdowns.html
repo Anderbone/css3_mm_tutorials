@@ -14,6 +14,7 @@
 </head>
 <body>
 	<div class="bs-example">
+
 		<!-- add dropdowns to navbar -->
 		<nav id="myNavbar" class="navbar navbar-default" role="navigation">
 	        <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,8 +60,159 @@
 	    </nav>
 		<hr>
 
+		<!-- add dropdowns to pills navs -->
+		<ul class="nav nav-pills">
+		    <li class="active"><a href="#">Home</a></li>
+		    <li><a href="#">Profile</a></li>
+		    <li class="dropdown">
+		        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+		        <ul class="dropdown-menu">
+		            <li><a href="#">Inbox</a></li>
+		            <li><a href="#">Drafts</a></li>
+		            <li><a href="#">Sent Items</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Trash</a></li>
+		        </ul>
+		    </li>
+		    <li class="dropdown pull-right">
+		        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Admin <b class="caret"></b></a>
+		        <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Settings</a></li>
+		        </ul>
+		    </li>
+		</ul>
+		<hr>
+
+		<!-- add dropdowns to buttons -->
+		<div class="btn-group">
+		    <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Action <span class="caret"></span></button>
+		    <ul class="dropdown-menu">
+		        <li><a href="#">Action</a></li>
+		        <li><a href="#">Another action</a></li>
+		        <li class="divider"></li>
+		        <li><a href="#">Separated link</a></li>
+		    </ul>
+		</div>
+		<hr>
+
+		<!-- add dropdowns to split buttons -->
+		<div class="btn-group">
+		    <button type="button" class="btn btn-default">Action</button>
+		    <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+		    <ul class="dropdown-menu">
+		        <li><a href="#">Action</a></li>
+		        <li><a href="#">Another action</a></li>
+		        <li class="divider"></li>
+		        <li><a href="#">Separated link</a></li>
+		    </ul>
+		</div>
+		<hr>
+
+		<!-- to create dropdown menus inside a button group just place a .btn-group along with the dropdown markup within another .btn-group -->
+		<div class="btn-group">
+		    <button type="button" class="btn btn-primary">Button</button>
+		    <button type="button" class="btn btn-primary">Another Button</button>
+		    <div class="btn-group">
+		        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Dropdown <span class="caret"></span></button>
+		        <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		        </ul>
+		    </div>
+		</div>
+		<hr>
+
+		<!-- create dropdown inside vertically stacked button groups -->
+		<div class="btn-group-vertical">
+		    <button type="button" class="btn btn-primary">Button</button>
+		    <button type="button" class="btn btn-primary">Another Button</button>
+		    <div class="btn-group">
+		        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Dropdown <span class="caret"></span></button>
+		        <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		        </ul>
+		    </div>
+		</div>
+		<hr>
+
+		<!-- trigger the dropdown menus above the elements by adding class .dropup to the parent -->
+		<div class="btn-group dropup">
+		    <button type="button" class="btn btn-primary">Button</button>
+		    <button type="button" class="btn btn-primary">Another Button</button>
+		    <div class="btn-group">
+		        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Dropdown <span class="caret"></span></button>
+		        <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		        </ul>
+		    </div>
+		</div>
+		<hr>
+
+		<!-- data attributes provides an easy mechanism for adding dropdowns to any element -->
+		<!-- add data-toggle="dropdown" to the link or button to toggle a dropdown -->
+		<div class="dropdown">
+		    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+		    <ul class="dropdown-menu">
+		        <li><a href="#">Action</a></li>
+		        <li><a href="#">Another action</a></li>
+		        <li class="divider"></li>
+		        <li><a href="#">Separated link</a></li>
+		    </ul>
+		</div>
+		<hr>
+
+		<!-- to keep URLs intact i.e. remove "#" from the URLs while showing dropdowns, use the data-target attribute instead of href="#" -->
+		<div class="dropdown">
+		    <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+		    <ul class="dropdown-menu">
+		        <li><a href="#">Action</a></li>
+		        <li><a href="#">Another action</a></li>
+		        <li class="divider"></li>
+		        <li><a href="#">Separated link</a></li>
+		    </ul>   
+		</div>		
+		<hr>
+
 	</div>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- add dropdowns manually using the JavaScript -->
+	<!-- call the dropdown() Bootstrap method with the "id" or "class" selector of the link or button element -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".dropdown-toggle").dropdown();
+	});  
+	</script>    
+
+	<!-- $().dropdown('toggle') -->
+	<!-- A programmatic api for toggling menus for a given navbar or tabbed navigation -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".dropdown-toggle").dropdown('toggle');
+	});  
+	</script>
+
+	<!-- displays the text content of dropdown link when the users click on it -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $(".dropdown").on("show.bs.dropdown", function(e){
+	        var linkText = $(e.relatedTarget).text(); // Get the link text
+	        alert("Click on OK button to view the dropdown menu for - " + linkText);
+	    });
+	});
+	</script>
+		
 </body>
 </html>
